@@ -4,7 +4,6 @@ import pandas as pd
 from fbprophet import Prophet
 import matplotlib.pyplot as plt
 from fbprophet.plot import add_changepoints_to_plot
-from statsmodels.tools.eval_measures import rmse
 
 st.title("Haglofs Digital Trend Analysis")
 
