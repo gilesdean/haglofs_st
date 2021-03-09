@@ -42,9 +42,14 @@ st.write('y-axis - Scaled search traffic from 0 to 100')
 
 st.line_chart(df['y'])
 
+st.subheader('How many weeks would you like to predict into the future')
+
 weeks = st.slider("Weeks", 26, 104)
 
 st.subheader(f'Predicting {weeks} weeks into the future')
+
+st.write('Utilising the FBProphet Machine Learning Library')
+
 
 m = Prophet(seasonality_mode='multiplicative')
 m.fit(df)
